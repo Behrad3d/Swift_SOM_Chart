@@ -12,6 +12,8 @@
 		13C5C2141D3FF61300EF503B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C5C2121D3FF61300EF503B /* Main.storyboard */; };
 		13C5C2161D3FF61300EF503B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C5C2151D3FF61300EF503B /* Assets.xcassets */; };
 		13C5C2191D3FF61300EF503B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C5C2171D3FF61300EF503B /* LaunchScreen.storyboard */; };
+		13C5C2211D3FF67900EF503B /* SOMChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5C2201D3FF67900EF503B /* SOMChart.swift */; };
+		13C5C2241D40399200EF503B /* sample_som.json in Resources */ = {isa = PBXBuildFile; fileRef = 13C5C2231D40399200EF503B /* sample_som.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		13C5C2151D3FF61300EF503B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13C5C2181D3FF61300EF503B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13C5C21A1D3FF61300EF503B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C5C2201D3FF67900EF503B /* SOMChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOMChart.swift; sourceTree = "<group>"; };
+		13C5C2221D40249F00EF503B /* SOM_Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SOM_Playground.playground; path = SOM_Chart/SOM_Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		13C5C2231D40399200EF503B /* sample_som.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_som.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 		13C5C2021D3FF61300EF503B = {
 			isa = PBXGroup;
 			children = (
+				13C5C2221D40249F00EF503B /* SOM_Playground.playground */,
 				13C5C20D1D3FF61300EF503B /* SOM_Chart */,
 				13C5C20C1D3FF61300EF503B /* Products */,
 			);
@@ -54,8 +60,10 @@
 		13C5C20D1D3FF61300EF503B /* SOM_Chart */ = {
 			isa = PBXGroup;
 			children = (
+				13C5C2231D40399200EF503B /* sample_som.json */,
 				13C5C20E1D3FF61300EF503B /* AppDelegate.swift */,
 				13C5C2101D3FF61300EF503B /* ViewController.swift */,
+				13C5C2201D3FF67900EF503B /* SOMChart.swift */,
 				13C5C2121D3FF61300EF503B /* Main.storyboard */,
 				13C5C2151D3FF61300EF503B /* Assets.xcassets */,
 				13C5C2171D3FF61300EF503B /* LaunchScreen.storyboard */,
@@ -91,11 +99,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = BoringB;
 				TargetAttributes = {
 					13C5C20A1D3FF61300EF503B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MT787T68LX;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -125,6 +135,7 @@
 				13C5C2191D3FF61300EF503B /* LaunchScreen.storyboard in Resources */,
 				13C5C2161D3FF61300EF503B /* Assets.xcassets in Resources */,
 				13C5C2141D3FF61300EF503B /* Main.storyboard in Resources */,
+				13C5C2241D40399200EF503B /* sample_som.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C5C2111D3FF61300EF503B /* ViewController.swift in Sources */,
+				13C5C2211D3FF67900EF503B /* SOMChart.swift in Sources */,
 				13C5C20F1D3FF61300EF503B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,13 +183,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -204,6 +226,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -217,13 +240,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -242,6 +275,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -251,10 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MT787T68LX;
 				INFOPLIST_FILE = SOM_Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BoringB.SOM-Chart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MT787T68LX;
 				INFOPLIST_FILE = SOM_Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BoringB.SOM-Chart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -288,6 +331,7 @@
 				13C5C21F1D3FF61300EF503B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
