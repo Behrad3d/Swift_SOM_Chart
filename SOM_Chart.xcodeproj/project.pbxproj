@@ -25,7 +25,6 @@
 		13C5C2181D3FF61300EF503B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13C5C21A1D3FF61300EF503B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C5C2201D3FF67900EF503B /* SOMChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOMChart.swift; sourceTree = "<group>"; };
-		13C5C2221D40249F00EF503B /* SOM_Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SOM_Playground.playground; path = SOM_Chart/SOM_Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		13C5C2231D40399200EF503B /* sample_som.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_som.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -43,7 +42,6 @@
 		13C5C2021D3FF61300EF503B = {
 			isa = PBXGroup;
 			children = (
-				13C5C2221D40249F00EF503B /* SOM_Playground.playground */,
 				13C5C20D1D3FF61300EF503B /* SOM_Chart */,
 				13C5C20C1D3FF61300EF503B /* Products */,
 			);

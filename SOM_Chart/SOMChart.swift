@@ -3,7 +3,8 @@
 //  SOM_Chart
 //
 //  Created by Behrad Bagheri on 7/20/16.
-//  Copyright © 2016 BoringB. All rights reserved.
+//  Updated on 08/13/2018 -> Swift 4.0 
+//
 //
 
 import UIKit
@@ -23,11 +24,11 @@ class SOMChart : UIView {
             if (hitUnit < 0) {
                 hitUnit = 0
             }
-            
             setNeedsDisplay()
             
         }
     }
+    
     @IBInspectable var hitColor : UIColor = UIColor.green
     @IBInspectable var unitBorderColor : UIColor = UIColor.white
     @IBInspectable var unitBorderWidth : CGFloat = 1.0
@@ -35,6 +36,7 @@ class SOMChart : UIView {
     @IBInspectable var minimumColor : UIColor = UIColor.blue
     @IBInspectable var maximumColor : UIColor = UIColor.red
     @IBInspectable var reverseColorMap : Bool = true
+    
     
     var distanceMatrix : [Double]? {
         didSet {
