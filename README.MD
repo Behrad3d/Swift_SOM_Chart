@@ -4,3 +4,4 @@ I used Self-Organizing Maps a lot and this is a Swift project to replicate SOM m
 
 ![SOM](images/sample_json.png)
 
+![Interface_Builder](image/InterfaceBuilder.gif)
